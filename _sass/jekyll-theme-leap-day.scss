@@ -12,7 +12,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+Mono');
 
 html {
-  background: Black fixed;
+  background: #191919 fixed;
   height: 100%;
   // background: url('../images/background.jpg') fixed;
   background-size: cover;
@@ -23,8 +23,7 @@ body {
   padding: 50px 0;
   margin: 0;
   font: 14px 'Noto Sans', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans JP', 'Noto Sans KR', sans-serif;
-  color: White;
-  text-shadow: 0 0 1em Fuchsia, 0 0 0.2em Fuchsia;
+  color: #efefef;
   font-weight: 300;
   min-height: calc(100% - 100px);
   overflow-wrap: anywhere;
@@ -40,11 +39,9 @@ header, section, img, footer {
 }
 
 a {
-  color: rgba(White, 0.8);
-  text-shadow: 0 0 1em Blue, 0 0 0.2em Blue;
+  color: rgba(#6a9fb5, 0.8);
   &:hover {
-    color: White;
-    text-shadow: 0 0 1em Blue, 0 0 0.2em Blue;
+    color: #6a9fb5;
   }
 }
 
