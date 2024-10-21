@@ -1,0 +1,622 @@
+/*
+   Modified from Modernist (https://github.com/pages-themes/modernist/blob/master/_sass/jekyll-theme-modernist.scss).
+*/
+
+@import "rouge-base16-dark";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:italic');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+Mono');
+
+html {
+  background: #191919 fixed;
+  height: 100%;
+  // background: url('../images/background.jpg') fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  padding: 50px 0;
+  margin: 0;
+  font: 14px 'Noto Sans', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans JP', 'Noto Sans KR', sans-serif;
+  color: #efefef;
+  font-weight: 300;
+  min-height: calc(100% - 100px);
+  overflow-wrap: anywhere;
+}
+
+.wrapper {
+  width: 740px;
+  margin: 0 auto;
+}
+
+header, section, img, footer {
+  display: block;
+}
+
+a {
+  color: rgba(#6a9fb5, 0.8);
+  &:hover {
+    color: #6a9fb5;
+  }
+}
+
+p {
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+strong {
+  font-weight: 700;
+}
+
+header {
+  position: relative;
+  padding: 15px 20px;
+  border-bottom: 3px solid rgba(#d0d0d0, 0.2);
+
+  h1 {
+    margin: 0;
+    padding: 0;
+    width: 365px;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #efefef;
+    text-align: start;
+  }
+
+  &.without-description h1 {
+    margin: 10px 0;
+  }
+
+  p {
+    margin: 0;
+    color: #d0d0d0;
+    width: 365px;
+    font-size: 13px;
+
+    &.view {
+      display: none;
+      font-weight: 700;
+      -webkit-font-smoothing: antialiased;
+
+      a {
+        color: rgba(#6a9fb5, 0.8);
+        text-decoration: none;
+        &:hover {
+          color: #6a9fb5;
+        }
+      }
+    }
+  }
+
+  ul {
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    height: 38px;
+    padding: 1px 0;
+    width: auto;
+
+    li {
+      width: 79px;
+      float: left;
+      border-right: 1px solid rgba(#000, 0);
+      height: 38px;
+
+      &.single {
+        border: none;
+      }
+    }
+
+    li + li {
+      width: 78px;
+      border-left: 1px solid rgba(#000, 0);
+    }
+
+    li + li + li {
+      border-right: none;
+      width: 79px;
+    }
+
+    a {
+      line-height: 1;
+      font-size: 11px;
+      color: #efefef;
+      display: block;
+      text-align: center;
+      font-weight: 400;
+      padding-top: 6px;
+      height: 40px;
+      text-decoration: none;
+
+      &:hover {
+        color: #efefef;
+      }
+
+      strong {
+        font-size: 14px;
+        display: block;
+        color: rgba(#6a9fb5, 0.8);
+        -webkit-font-smoothing: antialiased;
+        &:hover {
+           color: #6a9fb5;
+        }
+      }
+    }
+  }
+}
+
+section {
+  padding: 15px 20px;
+  font-size: 15px;
+  line-height: 1.5;
+  border-bottom: 3px solid rgba(#d0d0d0, 0.2);
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #efefef;
+  padding: 0;
+  margin: 30px 0 15px;
+  scroll-margin-top: 80px;
+}
+
+p, ul, ol, table, pre {
+  margin: 0 0 15px;
+}
+
+section p {
+  text-indent: 2em;
+}
+
+ul p {
+  text-indent: 0;
+}
+
+ol p {
+  text-indent: 0;
+}
+
+blockquote p {
+  text-indent: 0;
+}
+
+table p {
+  text-indent: 0;
+}
+
+pre p {
+  text-indent: 0;
+}
+
+pre.lines p {
+  text-indent: 0;
+}
+
+code p {
+  text-indent: 0;
+}
+
+// section ol {
+  // overflow-x: auto;
+// }
+
+// section ul {
+  // overflow-x: auto;
+// }
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  // margin-block-start: 0.67em;
+  // margin-block-end: 0.67em;
+
+  + h2 {
+    margin-top: 0;
+  }
+  + h3 {
+    margin-top: 0;
+  }
+  + h4 {
+    margin-top: 0;
+  }
+  + h5 {
+    margin-top: 0;
+  }
+  + h6 {
+    margin-top: 0;
+  }
+}
+
+h2 {
+  color: #d0d0d0;
+
+  + h3 {
+    margin-top: 0;
+  }
+  + h4 {
+    margin-top: 0;
+  }
+  + h5 {
+    margin-top: 0;
+  }
+  + h6 {
+    margin-top: 0;
+  }
+}
+
+h3, h4, h5, h6 {
+  color: #888;
+}
+
+h3 {
+
+  + h4 {
+    margin-top: 0;
+  }
+  + h5 {
+    margin-top: 0;
+  }
+  + h6 {
+    margin-top: 0;
+  }
+}
+
+h4 {
+
+  + h5 {
+    margin-top: 0;
+  }
+  + h6 {
+    margin-top: 0;
+  }
+}
+
+h5 {
+
+  + h6 {
+    margin-top: 0;
+  }
+}
+
+blockquote {
+  border-left: 3px solid rgba(#d0d0d0, 0.2);
+  margin: 0;
+  padding: 0 0 0 20px;
+  font-style: normal;
+  color: #d0d0d0;
+}
+
+img {
+  max-width: 100%;
+  margin: auto;
+  text-indent: 0;
+}
+
+code {
+  font-family: 'Noto Sans Mono', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans JP', 'Noto Sans KR', monospace;
+  color: #efefef;
+  font-size: 13px;
+  padding: 2px 4px;
+  background: rgba(#888, 0.2);
+}
+
+pre {
+  padding: 8px 15px;
+  overflow: auto;
+  overflow-y: hidden;
+
+  code {
+    margin: 0;
+    padding: 0;
+    color: #efefef;
+    background: rgba(#000, 0);
+  }
+}
+
+pre.lines {
+  font-family: 'Noto Sans Mono', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans JP', 'Noto Sans KR', monospace;
+  font-size: 13px;
+  line-height: 22.5px;
+  padding: 8px 15px;
+  float:  left;
+  display: block;
+  text-align: right;
+  box-shadow: none;
+  color: #888;
+  border-right: 3px solid rgba(#888, 0.2);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tbody tr:nth-child(odd) {
+  // background-color: #000;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(#888, 0.2);
+}
+
+th, td {
+  text-align: left;
+  padding: 5px 10px;
+}
+
+th {
+  border-bottom: 3px solid rgba(#d0d0d0, 0.2);
+}
+
+hr {
+  border: 0;
+  background: rgba(#d0d0d0, 0.2);
+  height: 3px;
+  margin: 30px 0;
+}
+
+
+nav ul li::marker {
+  color: #888;
+}
+
+nav {
+  width: 230px;
+  position: fixed;
+  top: 130px;
+  left: 50%;
+  margin-left: -625px;
+  bottom: 10px;
+  overflow-y: auto;
+  line-height: 1.5;
+
+  ul {
+    font-size: 14px;
+    padding: 0;
+
+    li {
+      padding: 5px 0;
+       
+      &.tag-h1 {
+        font-size: 1.5em;
+        text-align: center;
+        a {
+          font-weight: bold;
+          color: rgba(#efefef, 0.8);
+          text-decoration: none;
+          &:hover {
+            color: #efefef;
+          }
+        }
+        + .tag-h1 {
+          margin-top: 20px;
+        }
+        + .tag-h2 {
+          margin-top: 10px;
+        }
+        + .tag-h3 {
+          margin-top: 10px;
+        }
+      }
+
+      &.tag-h2 {
+        font-size: 1.17em;
+        a {
+          color: rgba(#d0d0d0, 0.8);
+          text-decoration: none;
+          &:hover {
+            color: #d0d0d0;
+          }
+        }
+        + .tag-h1 {
+          margin-top: 20px;
+        }
+        + .tag-h2 {
+          margin-top: 10px;
+        }
+        + .tag-h3 {
+        }
+      }
+
+      &.tag-h3 {
+        margin-left: 40px;
+        a {
+          color: rgba(#888, 0.8);
+          text-decoration: none;
+          &:hover {
+            color: #888;
+          }
+        }
+        + .tag-h1 {
+          margin-top: 20px;
+        }
+        + .tag-h2 {
+          margin-top: 10px;
+        }
+        + .tag-h3 {
+        }
+      }
+    }
+
+    // .active {
+    //   border-right: solid 4px #39C;
+    //   padding-right: 13px;
+    // }
+  }
+}
+
+.current-section {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  line-height: 1.5;
+  background: #191919;
+  color: #efefef;
+  border-bottom: 3px solid rgba(#d0d0d0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity ease-in-out 0.3s;
+  -webkit-transition: opacity ease-in-out 0.3s;  /* Safari <=6.1, Android <= 4.3 */
+}
+
+.current-section p {
+  padding: 15px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.current-section a {
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  width: 36px;
+  height: 36px;
+  opacity: 0.8;
+  margin-right: 20px;
+  margin-top: 15px;
+  margin-left: 20px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);  /* IE 5-7 */
+  transition: opacity ease-in-out 0.3s;
+  -webkit-transition: opacity ease-in-out 0.3s;  /* Safari <=6.1, Android <= 4.3 */
+}
+
+.current-section a:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);  /* IE 5-7 */
+}
+
+a.zip,
+a.zip span {
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 0px;
+  margin-left: 20px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);  /* IE 5-7 */
+  transition: opacity ease-in-out 0.3s;
+  -webkit-transition: opacity ease-in-out 0.3s;  /* Safari <=6.1, Android <= 4.3 */
+}
+
+a.tar,
+a.tar span {
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 0px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);  /* IE 5-7 */
+  transition: opacity ease-in-out 0.3s;
+  -webkit-transition: opacity ease-in-out 0.3s;  /* Safari <=6.1, Android <= 4.3 */
+}
+
+a.code {
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+  display: inline-block;
+  margin-right: 0px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);  /* IE 5-7 */
+  transition: opacity ease-in-out 0.3s;
+  -webkit-transition: opacity ease-in-out 0.3s;  /* Safari <=6.1, Android <= 4.3 */
+}
+
+a.zip:hover,
+a.tar:hover,
+a.code:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+footer {
+  width: 640px;
+  margin: 0 auto;
+  padding: 20px 0 0;
+  color: #efefef;
+  overflow: hidden;
+  line-height: 1.5;
+
+  a {
+    color: rgba(#6a9fb5, 0.8);
+    font-weight: bold;
+    text-decoration: none;
+    &:hover {
+      color: #6a9fb5;
+    }
+  }
+
+  p {
+    float: left;
+  }
+
+  p + p {
+    float: right;
+  }
+}
+
+@media print, screen and (max-width: 740px) {
+  body {
+    padding: 0;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  footer {
+    padding: 20px;
+    width: auto;
+
+    p {
+      float: none;
+      margin: 0;
+    }
+
+    p + p {
+      float: none;
+    }
+  }
+}
+
+@media print, screen and (max-width: 580px) {
+  header ul {
+    display: none;
+  }
+
+  header p.view {
+    display: block;
+    width: 100%;
+  }
+
+  header p {
+    width: 100%;
+  }
+
+  header h1 {
+    width: 100%;
+  }
+
+  a.zip, a.tar, a.code {
+    display: none;
+  }
+}
+
+@media print {
+  .current-section, nav {
+    display: none;
+  }
+}
