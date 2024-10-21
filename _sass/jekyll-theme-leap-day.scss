@@ -12,7 +12,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+Mono');
 
 html {
-  background: #191919 fixed;
+  background: rgba(28, 28, 30, 1) fixed;
   height: 100%;
   // background: url('../images/background.jpg') fixed;
   background-size: cover;
@@ -23,7 +23,8 @@ body {
   padding: 50px 0;
   margin: 0;
   font: 14px 'Noto Sans', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans JP', 'Noto Sans KR', sans-serif;
-  color: #efefef;
+  color: #fffafa;
+  text-shadow: 0 0 1em #ff8099, 0 0 0.2em #ff80bf;
   font-weight: 300;
   min-height: calc(100% - 100px);
   overflow-wrap: anywhere;
