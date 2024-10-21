@@ -40,9 +40,10 @@ header, section, img, footer {
 }
 
 a {
-  color: rgba(Blue, 0.8);
+  color: rgba(White, 0.8);
+  text-shadow: 0 0 1em Blue, 0 0 0.2em Blue;
   &:hover {
-    color: Blue;
+    color: White;
     text-shadow: 0 0 1em Blue, 0 0 0.2em Blue;
   }
 }
