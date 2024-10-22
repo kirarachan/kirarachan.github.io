@@ -338,9 +338,9 @@ table {
   border-collapse: collapse;
 }
 
-tbody tr:nth-child(odd) {
+// tbody tr:nth-child(odd) {
   // background-color: #000;
-}
+// }
 
 tbody tr:nth-child(even) {
   background-color: rgba(#888, 0.2);
@@ -421,8 +421,8 @@ nav {
         + .tag-h2 {
           margin-top: 10px;
         }
-        + .tag-h3 {
-        }
+        // + .tag-h3 {
+        // }
       }
 
       &.tag-h3 {
@@ -440,8 +440,8 @@ nav {
         + .tag-h2 {
           margin-top: 10px;
         }
-        + .tag-h3 {
-        }
+        // + .tag-h3 {
+        // }
       }
     }
 
