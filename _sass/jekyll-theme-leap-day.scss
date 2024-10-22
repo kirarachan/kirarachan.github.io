@@ -16,9 +16,6 @@
 
 html {
   background: #191919 fixed;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
 }
 
 body {
@@ -27,7 +24,6 @@ body {
   font: 14px 'Noto Sans', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans JP', 'Noto Sans KR', sans-serif;
   color: #efefef;
   font-weight: 300;
-  min-height: calc(100% - 100px);
   overflow-wrap: anywhere;
 }
 
@@ -351,6 +347,7 @@ nav ul li::marker {
 }
 
 nav {
+  display: none;
   width: 230px;
   position: fixed;
   top: 130px;
@@ -545,7 +542,13 @@ footer {
   }
 }
 
-@media print, screen and (max-width: 1280px) {
+@media print, screen and (min-width: 1280px) {
+  nav {
+    display: block;
+  }
+}
+
+@media print, screen and (max-width: 740px) {
   body {
     padding: 0;
   }
