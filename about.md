@@ -16,7 +16,7 @@
 
 - 顶部横幅与代码块行编号模块来自 [Time Machine](https://github.com/pages-themes/time-machine) 。
 
-- 字体是 Google 的 [Noto Sans](https://github.com/google/fonts) 系列。
+- 字体是 Google 的 [Noto Sans](https://github.com/notofonts/noto-docs) 系列。
 
 - 配色参考自 [rouge-base16-dark.scss](https://github.com/pages-themes/modernist/blob/master/_sass/rouge-base16-dark.scss) 。
 
