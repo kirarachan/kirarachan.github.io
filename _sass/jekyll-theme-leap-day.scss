@@ -549,13 +549,13 @@ footer {
 }
 
 @media print, screen and (max-width: 740px) {
-  body {
-    padding: 0;
-  }
+  // body {
+    // padding: 0;
+  // }
 
-  .wrapper {
-    width: 100%;
-  }
+  // .wrapper {
+    // width: 100%;
+  // }
 
   footer {
     padding: 20px;
@@ -596,7 +596,7 @@ footer {
 }
 
 @media print {
-  .current-section, nav {
+  .current-section {
     display: none;
   }
 }
