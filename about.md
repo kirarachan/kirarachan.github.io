@@ -16,7 +16,7 @@
 
 - 顶部横幅与代码块行编号模块来自 [Time Machine](https://github.com/pages-themes/time-machine) 。
 
-- 字体是 Google 的 [Noto Sans](https://github.com/notofonts/noto-docs) 系列。
+- 文本和代码字体是通过 [Google Fonts](https://github.com/google/fonts) 引入的 [Noto Sans](https://github.com/notofonts/noto-docs) 系列（含 [思源黑体](https://github.com/adobe-fonts/source-han-sans) ）和 [Fira Code](https://github.com/tonsky/FiraCode) 。数学表达式字体由 MathJax 控制。
 
 - 配色参考自 [rouge-base16-dark.scss](https://github.com/pages-themes/modernist/blob/master/_sass/rouge-base16-dark.scss) 。
 
