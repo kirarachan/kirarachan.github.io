@@ -5,11 +5,13 @@
 @import "rouge-base16-dark";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans:italic');
+
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+Mono');
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Code');
 
 html {
   background: #191919 fixed;
@@ -300,7 +302,7 @@ img {
 }
 
 code {
-  font-family: 'Noto Sans Mono', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans JP', 'Noto Sans KR', monospace;
+  font-family: 'Fira Code', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans JP', 'Noto Sans KR', monospace;
   color: #efefef;
   font-size: 13px;
   padding: 2px 4px;
@@ -321,7 +323,7 @@ pre {
 }
 
 pre.lines {
-  font-family: 'Noto Sans Mono', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans JP', 'Noto Sans KR', monospace;
+  font-family: 'Fira Code', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans JP', 'Noto Sans KR', monospace;
   font-size: 13px;
   line-height: 22.5px;
   padding: 8px 15px;
