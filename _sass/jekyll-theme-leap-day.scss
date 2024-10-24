@@ -428,6 +428,7 @@ nav {
 }
 
 .current-section {
+  display: none;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -544,6 +545,12 @@ footer {
 
 @media (min-width: 1280px) {
   nav {
+    display: block;
+  }
+}
+
+@media (min-height: 320px) {
+  .current-section {
     display: block;
   }
 }
