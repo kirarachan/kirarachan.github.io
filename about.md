@@ -10,7 +10,7 @@
 
 本博客托管于 [GitHub Pages](https://docs.github.com/en/pages) ，数学表达式由 [MathJax](https://docs.mathjax.org/en/latest/index.html) 呈现。
 
-- 主体样式来自 [Modernist](https://github.com/pages-themes/modernist) 。
+- 主体布局样式来自 [Modernist](https://github.com/pages-themes/modernist) 。
 
 - 左侧目录模块来自 [Leap Day](https://github.com/pages-themes/leap-day) 。
 
