@@ -22,7 +22,7 @@
 
 - 配色参考自 [rouge-base16-dark.scss](https://github.com/pages-themes/modernist/blob/master/_sass/rouge-base16-dark.scss) ，这也是代码块代码高亮配色。
 
-获取有关 Carbon 的更多信息，请阅读 [此帖子]() 。
+> 获取有关 Carbon 的更多信息，请阅读 [此帖子]() 。
 
 ---
 
