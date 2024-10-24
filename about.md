@@ -2,13 +2,13 @@
 
 ## About me
 
-- 非计算机专业，只会用 GitHub 网页端写写东西。
+- 非计算机专业，只懂用 GitHub 网页端写 Markdown。
 
-- 英语比较菜，看英文网站要用到翻译工具。
+- 英语水平不高，看英语网站要用到翻译工具。
 
 ## About blog
 
-本博客托管于 [GitHub Pages](https://docs.github.com/en/pages) ，主题 “Carbon” 基于其他开源主题修改而来：
+本博客托管于 [GitHub Pages](https://docs.github.com/en/pages) ，主题是我的个人项目，名为 Carbon，它基于其他开源主题修改而来：
 
 - 主体布局样式来自 [Modernist](https://github.com/pages-themes/modernist) 。
 
@@ -22,7 +22,7 @@
 
 - 配色参考自 [rouge-base16-dark.scss](https://github.com/pages-themes/modernist/blob/master/_sass/rouge-base16-dark.scss) ，这也是代码块代码高亮配色。
 
-如需获取 Carbon 源代码和使用说明，请阅读此帖子。
+获取有关 Carbon 的更多信息，请阅读 [此帖子]() 。
 
 ---
 
